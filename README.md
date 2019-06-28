@@ -3,7 +3,7 @@
 For more information about DBCP, See  http://www.java-school.net/jdbc/Connection-Pool#DBCP
 
 ### Have to do
-Create a table and sequence in the SCOTT account as follows and insert test records.
+Create a table and insert test records as follows.
 
 	mysql --user=root --password mysql
 	
