@@ -7,9 +7,10 @@ public class MySQLConnectionManager extends ConnectionManager {
 	public MySQLConnectionManager() {
 		super("mysql");
 
-		String driverClassName = "com.mysql.jdbc.Driver";
+		String driverClassName = "com.mysql.cj.jdbc.Driver";
+
 		String driverType = "jdbc:mysql";
-		String options = "?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8";
+		String options = "?useSSL=false&useUnicode=true&characterEncoding=utf8";
 
 		String url = driverType + "://" + dbServer + ":" + port + "/" + dbName + options;
 		
@@ -26,5 +27,4 @@ public class MySQLConnectionManager extends ConnectionManager {
 
 		this.ds = ds;
 	}
-
 }

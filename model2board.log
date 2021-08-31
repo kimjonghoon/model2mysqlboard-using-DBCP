@@ -1,0 +1,40 @@
+2021-08-31 10:31:55,459 DEBUG [qtp658156215-14] n.j.b.BoardDao [BoardDao.java:127] Error Source : BoardDao.getTotalRecord() : SQLException
+2021-08-31 10:31:55,466 DEBUG [qtp658156215-14] n.j.b.BoardDao [BoardDao.java:128] SQLState : null
+2021-08-31 10:31:55,471 DEBUG [qtp658156215-14] n.j.b.BoardDao [BoardDao.java:129] Message : Cannot create PoolableConnectionFactory (Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';useUnicode=yes&amp;characterEncoding=UTF-8'.)
+2021-08-31 10:31:55,474 DEBUG [qtp658156215-14] n.j.b.BoardDao [BoardDao.java:130] Oracle Error Code : 0
+2021-08-31 10:31:55,476 DEBUG [qtp658156215-14] n.j.b.BoardDao [BoardDao.java:131] sql : SELECT count(*) FROM thread_article
+2021-08-31 10:31:55,482 DEBUG [qtp658156215-14] n.j.b.BoardDao [BoardDao.java:88] Error Source : BoardDao.getArticleList() : SQLException
+2021-08-31 10:31:55,483 DEBUG [qtp658156215-14] n.j.b.BoardDao [BoardDao.java:89] SQLState : null
+2021-08-31 10:31:55,484 DEBUG [qtp658156215-14] n.j.b.BoardDao [BoardDao.java:90] Message : Cannot create PoolableConnectionFactory (Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';useUnicode=yes&amp;characterEncoding=UTF-8'.)
+2021-08-31 10:31:55,485 DEBUG [qtp658156215-14] n.j.b.BoardDao [BoardDao.java:91] Oracle Error Code : 0
+2021-08-31 10:31:55,485 DEBUG [qtp658156215-14] n.j.b.BoardDao [BoardDao.java:92] sql : SELECT articleno,family,parent,depth,indent,title,regdate FROM thread_article ORDER BY family DESC,depth ASC LIMIT ?,?
+2021-08-31 10:33:30,160 DEBUG [qtp658156215-18] n.j.b.BoardDao [BoardDao.java:127] Error Source : BoardDao.getTotalRecord() : SQLException
+2021-08-31 10:33:30,165 DEBUG [qtp658156215-18] n.j.b.BoardDao [BoardDao.java:128] SQLState : null
+2021-08-31 10:33:30,166 DEBUG [qtp658156215-18] n.j.b.BoardDao [BoardDao.java:129] Message : Cannot create PoolableConnectionFactory (Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';useUnicode=yes&amp;characterEncoding=UTF-8'.)
+2021-08-31 10:33:30,166 DEBUG [qtp658156215-18] n.j.b.BoardDao [BoardDao.java:130] Oracle Error Code : 0
+2021-08-31 10:33:30,166 DEBUG [qtp658156215-18] n.j.b.BoardDao [BoardDao.java:131] sql : SELECT count(*) FROM thread_article
+2021-08-31 10:33:30,170 DEBUG [qtp658156215-18] n.j.b.BoardDao [BoardDao.java:88] Error Source : BoardDao.getArticleList() : SQLException
+2021-08-31 10:33:30,174 DEBUG [qtp658156215-18] n.j.b.BoardDao [BoardDao.java:89] SQLState : null
+2021-08-31 10:33:30,177 DEBUG [qtp658156215-18] n.j.b.BoardDao [BoardDao.java:90] Message : Cannot create PoolableConnectionFactory (Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';useUnicode=yes&amp;characterEncoding=UTF-8'.)
+2021-08-31 10:33:30,177 DEBUG [qtp658156215-18] n.j.b.BoardDao [BoardDao.java:91] Oracle Error Code : 0
+2021-08-31 10:33:30,178 DEBUG [qtp658156215-18] n.j.b.BoardDao [BoardDao.java:92] sql : SELECT articleno,family,parent,depth,indent,title,regdate FROM thread_article ORDER BY family DESC,depth ASC LIMIT ?,?
+2021-08-31 10:52:40,097 DEBUG [qtp1156260946-18] n.j.b.BoardDao [BoardDao.java:127] Error Source : BoardDao.getTotalRecord() : SQLException
+2021-08-31 10:52:40,107 DEBUG [qtp1156260946-18] n.j.b.BoardDao [BoardDao.java:128] SQLState : null
+2021-08-31 10:52:40,112 DEBUG [qtp1156260946-18] n.j.b.BoardDao [BoardDao.java:129] Message : Cannot create PoolableConnectionFactory (Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';useUnicode=yes&amp;characterEncoding=UTF-8'.)
+2021-08-31 10:52:40,116 DEBUG [qtp1156260946-18] n.j.b.BoardDao [BoardDao.java:130] Oracle Error Code : 0
+2021-08-31 10:52:40,118 DEBUG [qtp1156260946-18] n.j.b.BoardDao [BoardDao.java:131] sql : SELECT count(*) FROM thread_article
+2021-08-31 10:52:40,122 DEBUG [qtp1156260946-18] n.j.b.BoardDao [BoardDao.java:88] Error Source : BoardDao.getArticleList() : SQLException
+2021-08-31 10:52:40,123 DEBUG [qtp1156260946-18] n.j.b.BoardDao [BoardDao.java:89] SQLState : null
+2021-08-31 10:52:40,123 DEBUG [qtp1156260946-18] n.j.b.BoardDao [BoardDao.java:90] Message : Cannot create PoolableConnectionFactory (Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';useUnicode=yes&amp;characterEncoding=UTF-8'.)
+2021-08-31 10:52:40,123 DEBUG [qtp1156260946-18] n.j.b.BoardDao [BoardDao.java:91] Oracle Error Code : 0
+2021-08-31 10:52:40,123 DEBUG [qtp1156260946-18] n.j.b.BoardDao [BoardDao.java:92] sql : SELECT articleno,family,parent,depth,indent,title,regdate FROM thread_article ORDER BY family DESC,depth ASC LIMIT ?,?
+2021-08-31 11:08:34,470 DEBUG [qtp1810327249-18] n.j.b.BoardDao [BoardDao.java:127] Error Source : BoardDao.getTotalRecord() : SQLException
+2021-08-31 11:08:34,483 DEBUG [qtp1810327249-18] n.j.b.BoardDao [BoardDao.java:128] SQLState : null
+2021-08-31 11:08:34,493 DEBUG [qtp1810327249-18] n.j.b.BoardDao [BoardDao.java:129] Message : Cannot create PoolableConnectionFactory (Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';characterEncoding=UTF-8'.)
+2021-08-31 11:08:34,499 DEBUG [qtp1810327249-18] n.j.b.BoardDao [BoardDao.java:130] Oracle Error Code : 0
+2021-08-31 11:08:34,500 DEBUG [qtp1810327249-18] n.j.b.BoardDao [BoardDao.java:131] sql : SELECT count(*) FROM thread_article
+2021-08-31 11:08:34,503 DEBUG [qtp1810327249-18] n.j.b.BoardDao [BoardDao.java:88] Error Source : BoardDao.getArticleList() : SQLException
+2021-08-31 11:08:34,506 DEBUG [qtp1810327249-18] n.j.b.BoardDao [BoardDao.java:89] SQLState : null
+2021-08-31 11:08:34,507 DEBUG [qtp1810327249-18] n.j.b.BoardDao [BoardDao.java:90] Message : Cannot create PoolableConnectionFactory (Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';characterEncoding=UTF-8'.)
+2021-08-31 11:08:34,508 DEBUG [qtp1810327249-18] n.j.b.BoardDao [BoardDao.java:91] Oracle Error Code : 0
+2021-08-31 11:08:34,508 DEBUG [qtp1810327249-18] n.j.b.BoardDao [BoardDao.java:92] sql : SELECT articleno,family,parent,depth,indent,title,regdate FROM thread_article ORDER BY family DESC,depth ASC LIMIT ?,?
