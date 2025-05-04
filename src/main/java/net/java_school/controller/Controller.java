@@ -92,7 +92,5 @@ public class Controller extends HttpServlet {
 		} else {
 			resp.sendRedirect(view);
 		}
-
 	}
-
 }

@@ -11,8 +11,8 @@
 
 <properties>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	<maven.compiler.source>17</maven.compiler.source>
-	<maven.compiler.target>17</maven.compiler.target>
+	<maven.compiler.source>21</maven.compiler.source>
+	<maven.compiler.target>21</maven.compiler.target>
 </properties>
 
 <dependencies>
@@ -22,43 +22,43 @@
 		<version>4.13.2</version>
 		<scope>test</scope>
 	</dependency>
-	<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+	<!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
 	<dependency>
-		<groupId>javax.servlet</groupId>
-		<artifactId>javax.servlet-api</artifactId>
-		<version>4.0.1</version>
+		<groupId>jakarta.servlet</groupId>
+		<artifactId>jakarta.servlet-api</artifactId>
+		<version>6.1.0</version>
 		<scope>provided</scope>
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp/jakarta.servlet.jsp-api -->
 	<dependency>
 		<groupId>jakarta.servlet.jsp</groupId>
 		<artifactId>jakarta.servlet.jsp-api</artifactId>
-		<version>3.1.1</version>
+		<version>4.0.0</version>
 		<scope>provided</scope>
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
 	<dependency>
 		<groupId>jakarta.servlet.jsp.jstl</groupId>
 		<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-		<version>3.0.0</version>
+		<version>3.0.2</version>
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 	<dependency>
 		<groupId>mysql</groupId>
 		<artifactId>mysql-connector-java</artifactId>
-		<version>8.0.33</version>
+		<version>9.3.0</version>
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
 	<dependency>
 		<groupId>org.apache.commons</groupId>
 		<artifactId>commons-dbcp2</artifactId>
-		<version>2.12.0</version>
+		<version>2.13.0</version>
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
 	<dependency>
 		<groupId>ch.qos.logback</groupId>
 		<artifactId>logback-classic</artifactId>
-		<version>1.5.3</version>
+		<version>1.5.18</version>
 		<exclusions>
 			<exclusion>
 				<groupId>org.slf4j</groupId>
@@ -71,13 +71,13 @@
 	<dependency>
 		<groupId>ch.qos.logback</groupId>
 		<artifactId>logback-core</artifactId>
-		<version>1.5.3</version>
+		<version>1.5.18</version>
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
 	<dependency>
 		<groupId>org.slf4j</groupId>
 		<artifactId>slf4j-api</artifactId>
-		<version>2.0.12</version>
+		<version>2.1.0-alpha1</version>
 	</dependency>
 </dependencies>
 
@@ -86,14 +86,47 @@
 	<pluginManagement>
 		<plugins>
 			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>src/main/webapp/WEB-INF/classes</directory>
+						</fileset>
+						<fileset>
+							<directory>src/main/webapp/WEB-INF/lib</directory>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.0.2</version>
+			</plugin>
+			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
 			</plugin>
-			<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-maven-plugin -->
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.2</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>2.5.2</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.8.2</version>
+			</plugin>
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<version>10.0.20</version>
+				<version>11.0.25</version>
 			</plugin>
 		</plugins>
 	</pluginManagement>
